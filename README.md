@@ -19,7 +19,31 @@ It converts security frameworks into **actionable checks**, **automated remediat
 * 🪟 Native Windows PowerShell support
 
 ---
-
+Deploy & Operate ACHILLES 
+______________
+Deployment & Operation Guide
+Supported Systems
+•	Windows 10 / 11
+•	Windows Server
+•	PowerShell 5.1+
+⚠️ Administrator privileges required
+______________
+Step 1 — Clone or Download
+git clone https://github.com/OmarFadel112/Automated-system-hardening-checklist-tool.git
+cd Automated-system-hardening-checklist-tool
+______________
+Step 2 — Allow Script Execution
+Set-ExecutionPolicy RemoteSigned
+Why this is required:
+PowerShell blocks unsigned scripts by default.
+RemoteSigned allows:
+•	Local scripts → run without signing
+•	Downloaded scripts → must be signed
+This is the minimum safe execution policy for PowerShell automation.
+______________
+Security Note
+ACHILLES modifies system-level registry keys and security policies. Some changes (e.g., USB storage, firewall rules, encryption) may impact normal system behavior.
+---
 ## Why ACHILLES Exists
 
 Security breaches are rarely caused by broken software — they are caused by **misconfiguration**.
