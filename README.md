@@ -29,16 +29,26 @@ Supported Systems
 ⚠️ Administrator privileges required
 ______________
 Step 1 — Clone or Download
+
 git clone https://github.com/OmarFadel112/Automated-system-hardening-checklist-tool.git
+
 cd Automated-system-hardening-checklist-tool
+
 ______________
 Step 2 — Allow Script Execution
+
 Set-ExecutionPolicy RemoteSigned
+
 Why this is required:
+
 PowerShell blocks unsigned scripts by default.
+
 RemoteSigned allows:
+
 •	Local scripts → run without signing
+
 •	Downloaded scripts → must be signed
+
 This is the minimum safe execution policy for PowerShell automation.
 ______________
 Security Note
